@@ -1,0 +1,39 @@
+# Scanner Class in Java
+
+## Theory
+
+The **Scanner** class in Java (from `java.util` package) is used to get user input, and is commonly used to read various types of data (int, float, String, etc.) from the keyboard.
+
+**Key Points:**
+- Requires importing `java.util.Scanner`
+- Used for reading input from various sources like keyboard, files, streams
+- Common methods: `nextInt()`, `nextFloat()`, `next()`, `nextLine()`
+
+**Basic Usage:**
+1. Import Scanner: `import java.util.Scanner;`
+2. Create a Scanner object: `Scanner sc = new Scanner(System.in);`
+3. Read input: `int a = sc.nextInt();`
+
+---
+
+## Code Example
+
+```java
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter your name: ");
+        String name = sc.nextLine();
+
+        System.out.print("Enter your age: ");
+        int age = sc.nextInt();
+
+        System.out.println("Hello, " + name + ". You are " + age + " years old.");
+
+        sc.close();
+    }
+}
+```
